@@ -6,12 +6,8 @@ var number=0;
 
 const Home = () => {
 	number++;
-	let tempNum=number;
-	let numbers=[];
-	for(let i=0;i<6;i++){
-		numbers.unshift(tempNum%10);
-		tempNum=Math.floor(tempNum/10);
-	}
+	let tempNum="000000"+number;
+	let numbers=tempNum.slice(tempNum.length-6,tempNum.length).split("");
 	return (
 		<div className="container-fluid bg-black px-5 mx-auto">
 			<div className="d-flex mx-5">
