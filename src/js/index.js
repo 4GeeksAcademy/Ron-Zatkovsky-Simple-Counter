@@ -13,5 +13,5 @@ const elem=document.getElementById('app');
 const root=ReactDOM.createRoot(elem);
 
 setInterval(()=>{
-    root.render(<Home/>);
+    root.render(<Home stop={false}/>);
 },1000);
